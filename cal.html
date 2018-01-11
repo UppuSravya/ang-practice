@@ -1,0 +1,30 @@
+<html>>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<h1>Calculator App</h1>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <div>
+            <input type="number" ng-model="a">
+        </div>
+        <br/>
+        <div>
+            <input type="number" ng-model="b">
+        </div>
+        <br/>
+        <div>
+            <button ng-repeat="icon in icons" name="btn2" ng-click="ico(icon)" ng-model="input1" ng-model="input2">{{icon}}</button> 
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <button ng-repeat="operator in operators" name="btn1" ng-click="cal(operator)" >{{operator}}</button>
+        <br/>
+        <br/> 
+                {{result}}
+</body>
+
+</html>

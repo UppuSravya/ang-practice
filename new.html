@@ -1,0 +1,39 @@
+<html>>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<h1>Calculator App</h1>
+
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <div class="calcbuttons">
+            <div>
+                <input type="text" name="textarea" ng-model="input1">{{icon}}</button>
+            </div>
+            <button name="btn1" ng-repeat="n in icons" class="numberbutton" value="123" ng-click="disp1(n)"= >{{n}}</button>
+            <br>
+            <button name="btn2" class="numberbutton" value="456" ng-repeat="m in icons2"  ng-click="disp2(m)">{{m}}</button>
+            <br>
+            <button name="btn3" class="numberbutton" value="789" ng-repeat="p in icons3"  ng-click="disp3(p)">{{p}}</button>
+            <br>
+            <button ng-repeat="operator in operators" name="btn1" ng-click="cal(operator)">{{operator}}</button>
+            <button name="btn0" class="numberbutton" value="0" ng-click='updateOutput(0)'>0</button>
+            <button name="btnClear" class="clearbutton" ng-click='clear()'>CLEAR</button>
+
+            <div>
+                <input type="number" ng-model="a">
+            </div>
+            <div>
+                <input type="number" ng-model="b">
+            </div>
+        </div>
+        {{result}}
+        {{res}}
+</body>
+
+</div>
+</body>
+
+</html>
